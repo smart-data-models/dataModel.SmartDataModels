@@ -43,7 +43,7 @@
           "description": "Property. Id of the subattributes of the current one if it has any",
            "items": {
              "type": "string",
-             "descripion": "Property. Every id of the subattreibutes of the current one if it has any"
+             "description": "Property. Every id of the subattributes of the current one if it has any"
            }
         },
         "property": {
@@ -80,7 +80,7 @@
         },
          "dataType": {
           "type": "string",
-          "description": "Property. Json schema basic data type, boolean, intenger, number, string, object or array"
+          "description": "Property. Json schema basic data type, boolean, integer, number, string, object or array"
         },
          "model": {
           "type": "string",
