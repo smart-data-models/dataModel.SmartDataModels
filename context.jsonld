@@ -1,0 +1,25 @@
+{
+    "@context": {
+        "Attribute": "https://uri.etsi.org/ngsi-ld/Attribute",
+        "_id": "https://smartdatamodels.org/dataModel.SmartDataModels/_id",
+        "context": "https://smartdatamodels.org/dataModel.SmartDataModels/context",
+        "dataModel": "https://smartdatamodels.org/dataModel.SmartDataModels/dataModel",
+        "dataType": "https://smartdatamodels.org/dataModel.SmartDataModels/dataType",
+        "description": "http://purl.org/dc/terms/description",
+        "format": "https://uri.etsi.org/ngsi-ld/format",
+        "id": "@id",
+        "license": "https://smartdatamodels.org/dataModel.SmartDataModels/license",
+        "model": "https://smartdatamodels.org/dataModel.SmartDataModels/model",
+        "modelTags": "https://smartdatamodels.org/dataModel.SmartDataModels/modelTags",
+        "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
+        "parentContext": "https://smartdatamodels.org/dataModel.SmartDataModels/parentContext",
+        "parentId": "https://smartdatamodels.org/dataModel.SmartDataModels/parentId",
+        "property": "https://smartdatamodels.org/dataModel.SmartDataModels/property",
+        "repoName": "https://smartdatamodels.org/dataModel.SmartDataModels/repoName",
+        "schemaVersion": "https://smartdatamodels.org/dataModel.SmartDataModels/schemaVersion",
+        "subpropertiesContext": "https://smartdatamodels.org/dataModel.SmartDataModels/subpropertiesContext",
+        "type": "@type",
+        "typeNGSI": "https://smartdatamodels.org/dataModel.SmartDataModels/typeNGSI",
+        "units": "https://smartdatamodels.org/dataModel.SmartDataModels/units"
+    }
+}
