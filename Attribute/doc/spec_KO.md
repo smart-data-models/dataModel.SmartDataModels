@@ -7,16 +7,18 @@
 [문서 자동 생성](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+글로벌 설명: 데이터 모델 속성 설명 ** **  
+버전: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## 속성 목록  
 
 <sup><sub>[*] 속성에 유형이 없는 것은 여러 유형 또는 다른 형식/패턴을 가질 수 있기 때문입니다</sub></sup>.  
-<!-- /30-PropertiesList -->  
+- `_id[string]`: 기본적으로 mongodb에서 제공된 항목의 식별자  - `context[string]`: 속성의 컨텍스트 URL  - `dataModel[string]`: 이 속성이 속한 데이터 모델  - `dataType[string]`: Json 스키마 기본 데이터 유형, 부울, 정수, 숫자, 문자열, 객체 또는 배열  - `description[string]`: 속성에 대한 텍스트 설명  - `format[string]`: 날짜, 시간, 날짜-시간, URI 등 json 스키마의 정의에 따른 속성의 형식입니다.  - `id[string]`: 컨텍스트 형식에 버전 번호가 더해진 속성의 설계 식별자(예: https://smartdatamodels.org/dataModel.EnergyCIM/WindGenType4IEC/address/addressLocality#0.0.1)  - `license[string]`: 데이터 모델 라이선스 링크  - `model[string]`: 속성의 의미적 출처를 가리키는 선택적 설명자(선택 사항)  - `modelTags[string]`: 데이터 모델의 태그  - `parentContext[string]`: 현재 속성이 있는 경우 현재 속성의 부모 속성의 ID입니다.  - `parentId[string]`: 현재 속성이 있는 경우 현재 속성의 부모 속성의 식별자입니다.  - `property[string]`: 속성 이름  - `repoName[string]`: 이 속성이 속한 주제  - `schemaVersion[string]`: 데이터 모델 버전  - `subpropertiesContext[array]`: 현재 속성의 하위 속성이 있는 경우 해당 속성의 ID입니다.  - `type[string]`: 이 값은 `ThreePhaseAcMeasurement`와 같아야 합니다.  - `typeNGSI[string]`: NGSI 표준에 따른 속성, 지오프로퍼티 또는 관계인지 여부입니다. 다른 유형도 가능합니다.  - `units[string]`: 단위와 함께 선택적 설명자. 가급적 UNECE 형식이 좋습니다.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 필수 속성  
-- 필수 속성 없음  <!-- /35-RequiredProperties -->  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-NotesYaml -->  
 스마트 데이터 모델 이니셔티브의 데이터 모델 속성에 대한 모델입니다 https://smartdatamodels.org https://smartdatamodels.org/extra/smartdatamodels.json 에서 모두 다운로드할 수 있습니다.  
 <!-- /40-NotesYaml -->  
