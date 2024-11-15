@@ -1,0 +1,3 @@
+/* (Beta) Export of data model Attribute of the subject dataModel.SmartDataModels for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE Attribute_type AS ENUM ('Attribute');
+CREATE TABLE Attribute (_id TEXT, context TEXT, dataModel TEXT, dataType TEXT, description TEXT, format TEXT, id TEXT, id TEXT PRIMARY KEY, license TEXT, model TEXT, modelTags TEXT, parentContext TEXT, parentId TEXT, property TEXT, repoName TEXT, schemaVersion TEXT, subpropertiesContext JSON, type Attribute_type, typeNGSI TEXT, units TEXT);
