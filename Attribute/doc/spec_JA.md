@@ -7,16 +7,18 @@
 [文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+グローバル記述：**データモデルの記述 属性  
+バージョン: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## プロパティのリスト  
 
 <sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
-<!-- /30-PropertiesList -->  
+- `_id[string]`: デフォルトでmongodbから与えられる項目の識別子  - `context[string]`: 属性のコンテキストURL  - `dataModel[string]`: この属性が属するデータモデル  - `dataType[string]`: Jsonスキーマの基本データ型、boolean、integer、number、string、object、array。  - `description[string]`: 属性のテキスト記述  - `format[string]`: jsonスキーマの定義に従った属性のフォーマット。  - `id[string]`: https://smartdatamodels.org/dataModel.EnergyCIM/WindGenType4IEC/address/addressLocality#0.0.1 のような、そのコンテキストの形式とバージョン番号を加えた、属性の設計された識別子。  - `license[string]`: データモデルのライセンスへのリンク  - `model[string]`: 属性のセマンティック・ソースを指すオプションの記述子  - `modelTags[string]`: データモデルのタグ  - `parentContext[string]`: 現在の属性の親属性のID。  - `parentId[string]`: 現在の属性の親属性の識別子。  - `property[string]`: 属性名  - `repoName[string]`: この属性が属するサブジェクト  - `schemaVersion[string]`: データモデルのバージョン  - `subpropertiesContext[array]`: 現在の属性にサブ属性がある場合、そのID。  - `type[string]`: ThreePhaseAcMeasurement`と等しくなければならない。  - `typeNGSI[string]`: NGSI 標準に従えば、Property、GeoProperty、または Relationship である。他のタイプもあり得る。  - `units[string]`: オプションで単位を記述する。UNECE形式が望ましい。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
-- 必須プロパティなし  <!-- /35-RequiredProperties -->  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-NotesYaml -->  
 これはスマート・データ・モデル・イニシアチブのデータ・モデルの属性のモデルである。https://smartdatamodels.org https://smartdatamodels.org/extra/smartdatamodels.json からすべてをダウンロードできる。  
 <!-- /40-NotesYaml -->  
