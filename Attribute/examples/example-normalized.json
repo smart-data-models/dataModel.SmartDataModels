@@ -1,6 +1,7 @@
 {
   "id": "https://smartdatamodels.org/dataModel.Hl7/Account/_valueDate/extension#0.0.1",
   "type": "Attribute",
+  "type": "Attribute",
   "_id": {
     "type": "Text",
     "value": "6557985a8f4f3ce5fd4e87df"
