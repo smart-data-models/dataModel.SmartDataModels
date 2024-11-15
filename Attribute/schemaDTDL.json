@@ -1,0 +1,148 @@
+{
+    "@id": "dtmi:com:ngsi-ld:Attribute;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data Models - SmartDataModels / Attribute adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.SmartDataModels/master/Attribute/schema.json",
+    "description": "Description of the data model Attribute ",
+    "displayName": "Attribute",
+    "contents": [
+        {
+            "name": "_id",
+            "writable": true,
+            "displayName": "_id",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Identifier of the item given from mongodb by default"
+        },
+        {
+            "name": "context",
+            "writable": true,
+            "displayName": "context",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Context url of the attribute"
+        },
+        {
+            "name": "dataModel",
+            "writable": true,
+            "displayName": "dataModel",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The data model this attribute belongs to"
+        },
+        {
+            "name": "dataType",
+            "writable": true,
+            "displayName": "dataType",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Json schema basic data type, boolean, integer, number, string, object or array"
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Textual description of the attribute"
+        },
+        {
+            "name": "format",
+            "writable": true,
+            "displayName": "format",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Either date, or time, or date-time, or URI, etc the format of the attribute according to the definitions in json schema"
+        },
+        {
+            "name": "license",
+            "writable": true,
+            "displayName": "license",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Link to the license for the data model"
+        },
+        {
+            "name": "model",
+            "writable": true,
+            "displayName": "model",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Optional descriptor pointing to the semantic source of the attribute"
+        },
+        {
+            "name": "modelTags",
+            "writable": true,
+            "displayName": "modelTags",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Tags of the data model"
+        },
+        {
+            "name": "parentContext",
+            "writable": true,
+            "displayName": "parentContext",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Id of the parent attribute of the current one if it has any"
+        },
+        {
+            "name": "parentId",
+            "writable": true,
+            "displayName": "parentId",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Identifier of the parent attribute of the current one if it has any"
+        },
+        {
+            "name": "property",
+            "writable": true,
+            "displayName": "property",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Name of the attribute"
+        },
+        {
+            "name": "repoName",
+            "writable": true,
+            "displayName": "repoName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The subject this attribute belongs to"
+        },
+        {
+            "name": "schemaVersion",
+            "writable": true,
+            "displayName": "schemaVersion",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Version of the data model"
+        },
+        {
+            "name": "typeNGSI",
+            "writable": true,
+            "displayName": "typeNGSI",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Whether it is a Property, GeoProperty, or Relationship according to the NGSI standard. Other types could be as well"
+        },
+        {
+            "name": "units",
+            "writable": true,
+            "displayName": "units",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Optional descriptor with the units. Preferably in UNECE format"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "subpropertiesContext",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Id of the subattributes of the current one if it has any",
+            "displayName": "subpropertiesContext"
+        }
+    ]
+}
