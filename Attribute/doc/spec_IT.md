@@ -7,16 +7,18 @@
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+Descrizione globale: **Descrizione del modello di dati Attributo **  
+versione: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
 <sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
-<!-- /30-PropertiesList -->  
+- `_id[string]`: Identificatore dell'elemento fornito da mongodb per impostazione predefinita  - `context[string]`: URL del contesto dell'attributo  - `dataModel[string]`: Il modello di dati a cui appartiene questo attributo  - `dataType[string]`: Tipo di dati di base dello schema Json, booleano, intero, numero, stringa, oggetto o array  - `description[string]`: Descrizione testuale dell'attributo  - `format[string]`: Data, o ora, o data-ora, o URI, ecc. il formato dell'attributo secondo le definizioni dello schema json.  - `id[string]`: Identificatore progettato dell'attributo nel formato del suo contesto più il numero di versione, come ad esempio https://smartdatamodels.org/dataModel.EnergyCIM/WindGenType4IEC/address/addressLocality#0.0.1.  - `license[string]`: Collegamento alla licenza per il modello di dati  - `model[string]`: Descrittore opzionale che punta alla fonte semantica dell'attributo  - `modelTags[string]`: Tag del modello di dati  - `parentContext[string]`: Id dell'attributo genitore dell'attributo corrente, se ne ha uno  - `parentId[string]`: Identificatore dell'attributo padre di quello corrente, se ne ha uno.  - `property[string]`: Nome dell'attributo  - `repoName[string]`: Il soggetto a cui appartiene questo attributo  - `schemaVersion[string]`: Versione del modello di dati  - `subpropertiesContext[array]`: Id dei sottoattributi di quello corrente, se ne ha uno  - `type[string]`: Deve essere uguale a `ThreePhaseAcMeasurement`.  - `typeNGSI[string]`: Che si tratti di una Proprietà, di una GeoProprietà o di una Relazione secondo lo standard NGSI. Potrebbero essere anche altri tipi  - `units[string]`: Descrittore opzionale con le unità di misura. Preferibilmente in formato UNECE  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- Nessuna proprietà richiesta  <!-- /35-RequiredProperties -->  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-NotesYaml -->  
 Questo è il modello per gli attributi del modello di dati dell'iniziativa Smart Data models https://smartdatamodels.org è possibile scaricare tutti i modelli da https://smartdatamodels.org/extra/smartdatamodels.json.  
 <!-- /40-NotesYaml -->  
