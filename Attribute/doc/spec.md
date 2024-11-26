@@ -15,7 +15,7 @@
 ## List of properties  
 
 <sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-- `_id[string]`: Identifier of the item given from mongodb by default  - `context[string]`: Context url of the attribute  - `dataModel[string]`: The data model this attribute belongs to  - `dataType[string]`: Json schema basic data type, boolean, integer, number, string, object or array  - `description[string]`: Textual description of the attribute  - `format[string]`: Either date, or time, or date-time, or URI, etc the format of the attribute according to the definitions in json schema  - `id[string]`: Designed identifier of the attribute in the format of its context plus the version number, such as https://smartdatamodels.org/dataModel.EnergyCIM/WindGenType4IEC/address/addressLocality#0.0.1  - `license[string]`: Link to the license for the data model  - `model[string]`: Optional descriptor pointing to the semantic source of the attribute  - `modelTags[string]`: Tags of the data model  - `parentContext[string]`: Id of the parent attribute of the current one if it has any  - `parentId[string]`: Identifier of the parent attribute of the current one if it has any  - `property[string]`: Name of the attribute  - `repoName[string]`: The subject this attribute belongs to  - `schemaVersion[string]`: Version of the data model  - `subpropertiesContext[array]`: Id of the subattributes of the current one if it has any  - `type[string]`: It must be equal to `ThreePhaseAcMeasurement`.  - `typeNGSI[string]`: Whether it is a Property, GeoProperty, or Relationship according to the NGSI standard. Other types could be as well  - `units[string]`: Optional descriptor with the units. Preferably in UNECE format  <!-- /30-PropertiesList -->  
+- `_id[string]`: Identifier of the item given from mongodb by default  - `context[string]`: Context url of the Attribute  - `dataModel[string]`: The data model this attribute belongs to  - `dataType[string]`: Json schema basic data type, boolean, integer, number, string, object or array  - `description[string]`: Textual description of the attribute  - `format[string]`: Either date, or time, or date-time, or URI, etc the format of the attribute according to the definitions in json schema  - `id[string]`: Designed identifier of the attribute in the format of its context plus the version number, such as https://smartdatamodels.org/dataModel.EnergyCIM/WindGenType4IEC/address/addressLocality#0.0.1  - `license[string]`: Link to the license for the data model  - `model[string]`: Optional descriptor pointing to the semantic source of the attribute  - `modelTags[string]`: Tags of the data model  - `parentContext[string]`: Id of the parent Attribute of the current one if it has any  - `parentId[string]`: Identifier of the parent attribute of the current one if it has any  - `property[string]`: Name of the attribute  - `repoName[string]`: The subject this attribute belongs to  - `schemaVersion[string]`: Version of the data model  - `subpropertiesContext[array]`: Id of the subattributes of the current one if it has any  - `type[string]`: It must be equal to Attribute  - `typeNGSI[string]`: Whether it is a Property, GeoProperty, or Relationship according to the NGSI standard. Other types could be as well  - `units[string]`: Optional descriptor with the units. Preferably in UNECE format  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -38,7 +38,7 @@ Attribute:
       x-ngsi:    
         type: Property    
     context:    
-      description: Context url of the attribute    
+      description: Context url of the Attribute    
       type: string    
       x-ngsi:    
         type: Property    
@@ -83,7 +83,7 @@ Attribute:
       x-ngsi:    
         type: Property    
     parentContext:    
-      description: Id of the parent attribute of the current one if it has any    
+      description: Id of the parent Attribute of the current one if it has any    
       type: string    
       x-ngsi:    
         type: Property    
@@ -118,7 +118,7 @@ Attribute:
       x-ngsi:    
         type: Property    
     type:    
-      description: It must be equal to `ThreePhaseAcMeasurement`.    
+      description: It must be equal to Attribute    
       enum:    
         - Attribute    
       type: string    
@@ -251,7 +251,7 @@ Attribute:
   "dataType": "array",  
   "description": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension",  
   "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.SmartDataModels/refs/heads/master/context.jsonld"  
+    "https://smart-data-models.github.io/dataModel.SmartDataModels/context.jsonld"  
   ]  
 }  
 ```  
@@ -312,7 +312,7 @@ Attribute:
     "value": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension"  
   },  
   "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.SmartDataModels/refs/heads/master/context.jsonld"  
+    "https://smart-data-models.github.io/dataModel.SmartDataModels/context.jsonld"  
   ]  
 }  
 ```  
