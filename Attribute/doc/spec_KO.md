@@ -15,7 +15,7 @@
 ## 속성 목록  
 
 <sup><sub>[*] 속성에 유형이 없는 것은 여러 유형 또는 다른 형식/패턴을 가질 수 있기 때문입니다</sub></sup>.  
-- `_id[string]`: 기본적으로 mongodb에서 제공된 항목의 식별자  - `context[string]`: 속성의 컨텍스트 URL  - `dataModel[string]`: 이 속성이 속한 데이터 모델  - `dataType[string]`: Json 스키마 기본 데이터 유형, 부울, 정수, 숫자, 문자열, 객체 또는 배열  - `description[string]`: 속성에 대한 텍스트 설명  - `format[string]`: 날짜, 시간, 날짜-시간, URI 등 json 스키마의 정의에 따른 속성의 형식입니다.  - `id[string]`: 컨텍스트 형식에 버전 번호가 더해진 속성의 설계 식별자(예: https://smartdatamodels.org/dataModel.EnergyCIM/WindGenType4IEC/address/addressLocality#0.0.1)  - `license[string]`: 데이터 모델 라이선스 링크  - `model[string]`: 속성의 의미적 출처를 가리키는 선택적 설명자(선택 사항)  - `modelTags[string]`: 데이터 모델의 태그  - `parentContext[string]`: 현재 속성이 있는 경우 현재 속성의 부모 속성의 ID입니다.  - `parentId[string]`: 현재 속성이 있는 경우 현재 속성의 부모 속성의 식별자입니다.  - `property[string]`: 속성 이름  - `repoName[string]`: 이 속성이 속한 주제  - `schemaVersion[string]`: 데이터 모델 버전  - `subpropertiesContext[array]`: 현재 속성의 하위 속성이 있는 경우 해당 속성의 ID입니다.  - `type[string]`: 이 값은 `ThreePhaseAcMeasurement`와 같아야 합니다.  - `typeNGSI[string]`: NGSI 표준에 따른 속성, 지오프로퍼티 또는 관계인지 여부입니다. 다른 유형도 가능합니다.  - `units[string]`: 단위와 함께 선택적 설명자. 가급적 UNECE 형식이 좋습니다.  <!-- /30-PropertiesList -->  
+- `_id[string]`: 기본적으로 mongodb에서 제공된 항목의 식별자  - `context[string]`: 어트리뷰트의 컨텍스트 URL  - `dataModel[string]`: 이 속성이 속한 데이터 모델  - `dataType[string]`: Json 스키마 기본 데이터 유형, 부울, 정수, 숫자, 문자열, 객체 또는 배열  - `description[string]`: 속성에 대한 텍스트 설명  - `format[string]`: 날짜, 시간, 날짜-시간, URI 등 json 스키마의 정의에 따른 속성의 형식입니다.  - `id[string]`: 컨텍스트 형식에 버전 번호가 더해진 속성의 설계 식별자(예: https://smartdatamodels.org/dataModel.EnergyCIM/WindGenType4IEC/address/addressLocality#0.0.1)  - `license[string]`: 데이터 모델 라이선스 링크  - `model[string]`: 속성의 의미적 출처를 가리키는 선택적 설명자(선택 사항)  - `modelTags[string]`: 데이터 모델의 태그  - `parentContext[string]`: 현재 어트리뷰트가 있는 경우 현재 어트리뷰트의 부모 어트리뷰트의 ID입니다.  - `parentId[string]`: 현재 속성이 있는 경우 현재 속성의 부모 속성의 식별자입니다.  - `property[string]`: 속성 이름  - `repoName[string]`: 이 속성이 속한 주제  - `schemaVersion[string]`: 데이터 모델 버전  - `subpropertiesContext[array]`: 현재 속성의 하위 속성이 있는 경우 해당 속성의 ID입니다.  - `type[string]`: 속성은 다음과 같아야 합니다.  - `typeNGSI[string]`: NGSI 표준에 따른 속성, 지오프로퍼티 또는 관계인지 여부입니다. 다른 유형도 가능합니다.  - `units[string]`: 단위와 함께 선택적 설명자. 가급적 UNECE 형식이 좋습니다.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 필수 속성  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -38,7 +38,7 @@ Attribute:
       x-ngsi:    
         type: Property    
     context:    
-      description: Context url of the attribute    
+      description: Context url of the Attribute    
       type: string    
       x-ngsi:    
         type: Property    
@@ -83,7 +83,7 @@ Attribute:
       x-ngsi:    
         type: Property    
     parentContext:    
-      description: Id of the parent attribute of the current one if it has any    
+      description: Id of the parent Attribute of the current one if it has any    
       type: string    
       x-ngsi:    
         type: Property    
@@ -118,7 +118,7 @@ Attribute:
       x-ngsi:    
         type: Property    
     type:    
-      description: It must be equal to `ThreePhaseAcMeasurement`.    
+      description: It must be equal to Attribute    
       enum:    
         - Attribute    
       type: string    
@@ -251,7 +251,7 @@ Attribute:
   "dataType": "array",  
   "description": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension",  
   "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.SmartDataModels/refs/heads/master/context.jsonld"  
+    "https://smart-data-models.github.io/dataModel.SmartDataModels/context.jsonld"  
   ]  
 }  
 ```  
@@ -312,7 +312,7 @@ Attribute:
     "value": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension"  
   },  
   "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.SmartDataModels/refs/heads/master/context.jsonld"  
+    "https://smart-data-models.github.io/dataModel.SmartDataModels/context.jsonld"  
   ]  
 }  
 ```  
