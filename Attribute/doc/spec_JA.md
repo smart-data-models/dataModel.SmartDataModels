@@ -4,7 +4,7 @@
 ========<!-- /10-Header -->  
 <!-- 15-License -->  
 [オープン・ライセンス](https://github.com/smart-data-models//dataModel.SmartDataModels/blob/master/Attribute/LICENSE.md)  
-[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[文書が自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
 グローバル記述：**データモデルの記述 属性  
@@ -15,7 +15,7 @@
 ## プロパティのリスト  
 
 <sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
-- `_id[string]`: デフォルトでmongodbから与えられる項目の識別子  - `context[string]`: 属性のコンテキストURL  - `dataModel[string]`: この属性が属するデータモデル  - `dataType[string]`: Jsonスキーマの基本データ型、boolean、integer、number、string、object、array。  - `description[string]`: 属性のテキスト記述  - `format[string]`: jsonスキーマの定義に従った属性のフォーマット。  - `id[string]`: https://smartdatamodels.org/dataModel.EnergyCIM/WindGenType4IEC/address/addressLocality#0.0.1 のような、そのコンテキストの形式とバージョン番号を加えた、属性の設計された識別子。  - `license[string]`: データモデルのライセンスへのリンク  - `model[string]`: 属性のセマンティック・ソースを指すオプションの記述子  - `modelTags[string]`: データモデルのタグ  - `parentContext[string]`: 現在の属性の親属性のID。  - `parentId[string]`: 現在の属性の親属性の識別子。  - `property[string]`: 属性名  - `repoName[string]`: この属性が属するサブジェクト  - `schemaVersion[string]`: データモデルのバージョン  - `subpropertiesContext[array]`: 現在の属性にサブ属性がある場合、そのID。  - `type[string]`: ThreePhaseAcMeasurement`と等しくなければならない。  - `typeNGSI[string]`: NGSI 標準に従えば、Property、GeoProperty、または Relationship である。他のタイプもあり得る。  - `units[string]`: オプションで単位を記述する。UNECE形式が望ましい。  <!-- /30-PropertiesList -->  
+- `_id[string]`: デフォルトでmongodbから与えられる項目の識別子  - `context[string]`: 属性のコンテキストURL  - `dataModel[string]`: この属性が属するデータモデル  - `dataType[string]`: Jsonスキーマの基本データ型、boolean、integer、number、string、object、array。  - `description[string]`: 属性のテキスト記述  - `format[string]`: jsonスキーマの定義に従った属性のフォーマット。  - `id[string]`: https://smartdatamodels.org/dataModel.EnergyCIM/WindGenType4IEC/address/addressLocality#0.0.1 のような、そのコンテキストの形式とバージョン番号を加えた、属性の設計された識別子。  - `license[string]`: データモデルのライセンスへのリンク  - `model[string]`: 属性のセマンティック・ソースを指すオプションの記述子  - `modelTags[string]`: データモデルのタグ  - `parentContext[string]`: 現在のアトリビュートに親アトリビュートがある場合、その親アトリビュートの ID。  - `parentId[string]`: 現在の属性の親属性の識別子。  - `property[string]`: 属性名  - `repoName[string]`: この属性が属するサブジェクト  - `schemaVersion[string]`: データモデルのバージョン  - `subpropertiesContext[array]`: 現在の属性にサブ属性がある場合、そのID。  - `type[string]`: 属性  - `typeNGSI[string]`: NGSI 標準に従えば、Property、GeoProperty、または Relationship である。他のタイプもあり得る。  - `units[string]`: オプションで単位を記述する。UNECE形式が望ましい。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -38,7 +38,7 @@ Attribute:
       x-ngsi:    
         type: Property    
     context:    
-      description: Context url of the attribute    
+      description: Context url of the Attribute    
       type: string    
       x-ngsi:    
         type: Property    
@@ -83,7 +83,7 @@ Attribute:
       x-ngsi:    
         type: Property    
     parentContext:    
-      description: Id of the parent attribute of the current one if it has any    
+      description: Id of the parent Attribute of the current one if it has any    
       type: string    
       x-ngsi:    
         type: Property    
@@ -118,7 +118,7 @@ Attribute:
       x-ngsi:    
         type: Property    
     type:    
-      description: It must be equal to `ThreePhaseAcMeasurement`.    
+      description: It must be equal to Attribute    
       enum:    
         - Attribute    
       type: string    
@@ -251,7 +251,7 @@ Attribute:
   "dataType": "array",  
   "description": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension",  
   "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.SmartDataModels/refs/heads/master/context.jsonld"  
+    "https://smart-data-models.github.io/dataModel.SmartDataModels/context.jsonld"  
   ]  
 }  
 ```  
@@ -312,7 +312,7 @@ Attribute:
     "value": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension"  
   },  
   "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.SmartDataModels/refs/heads/master/context.jsonld"  
+    "https://smart-data-models.github.io/dataModel.SmartDataModels/context.jsonld"  
   ]  
 }  
 ```  
