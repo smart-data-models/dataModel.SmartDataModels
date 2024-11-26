@@ -15,7 +15,7 @@
 ## 属性列表  
 
 <sup><sub>[*] 如果属性中没有类型，是因为它可能有多个类型或不同的格式/模式</sub></sup>。  
-- `_id[string]`: 默认情况下从 mongodb 获取的项目标识符  - `context[string]`: 属性的上下文 URL  - `dataModel[string]`: 该属性所属的数据模型  - `dataType[string]`: Json 模式基本数据类型、布尔、整数、数字、字符串、对象或数组  - `description[string]`: 属性的文字描述  - `format[string]`: 日期、时间、date-time、URI 等，属性格式与 json 模式中的定义一致。  - `id[string]`: 以上下文格式加上版本号设计的属性标识符，如 https://smartdatamodels.org/dataModel.EnergyCIM/WindGenType4IEC/address/addressLocality#0.0.1  - `license[string]`: 数据模型许可证链接  - `model[string]`: 指向属性语义来源的可选描述符  - `modelTags[string]`: 数据模型的标签  - `parentContext[string]`: 当前属性的父属性的 ID（如果有的话  - `parentId[string]`: 当前属性的父属性标识符（如果有的话  - `property[string]`: 属性名称  - `repoName[string]`: 该属性所属的主题  - `schemaVersion[string]`: 数据模型版本  - `subpropertiesContext[array]`: 当前属性的子属性 Id（如果有的话  - `type[string]`: 它必须等于 `ThreePhaseAcMeasurement`。  - `typeNGSI[string]`: 根据 NGSI 标准，它可以是属性、地理属性或关系。也可以是其他类型  - `units[string]`: 带有单位的可选描述符。最好采用联合国欧洲经济委员会的格式  <!-- /30-PropertiesList -->  
+- `_id[string]`: 默认情况下从 mongodb 获取的项目标识符  - `context[string]`: 属性的上下文 URL  - `dataModel[string]`: 该属性所属的数据模型  - `dataType[string]`: Json 模式基本数据类型、布尔、整数、数字、字符串、对象或数组  - `description[string]`: 属性的文字描述  - `format[string]`: 日期、时间、date-time、URI 等，属性格式与 json 模式中的定义一致。  - `id[string]`: 以上下文格式加上版本号设计的属性标识符，如 https://smartdatamodels.org/dataModel.EnergyCIM/WindGenType4IEC/address/addressLocality#0.0.1  - `license[string]`: 数据模型许可证链接  - `model[string]`: 指向属性语义来源的可选描述符  - `modelTags[string]`: 数据模型的标签  - `parentContext[string]`: 当前属性的父属性 ID（如果有的话  - `parentId[string]`: 当前属性的父属性标识符（如果有的话  - `property[string]`: 属性名称  - `repoName[string]`: 该属性所属的主题  - `schemaVersion[string]`: 数据模型版本  - `subpropertiesContext[array]`: 当前属性的子属性 Id（如果有的话  - `type[string]`: 必须等于属性  - `typeNGSI[string]`: 根据 NGSI 标准，它可以是属性、地理属性或关系。也可以是其他类型  - `units[string]`: 带有单位的可选描述符。最好采用联合国欧洲经济委员会的格式  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -38,7 +38,7 @@ Attribute:
       x-ngsi:    
         type: Property    
     context:    
-      description: Context url of the attribute    
+      description: Context url of the Attribute    
       type: string    
       x-ngsi:    
         type: Property    
@@ -83,7 +83,7 @@ Attribute:
       x-ngsi:    
         type: Property    
     parentContext:    
-      description: Id of the parent attribute of the current one if it has any    
+      description: Id of the parent Attribute of the current one if it has any    
       type: string    
       x-ngsi:    
         type: Property    
@@ -118,7 +118,7 @@ Attribute:
       x-ngsi:    
         type: Property    
     type:    
-      description: It must be equal to `ThreePhaseAcMeasurement`.    
+      description: It must be equal to Attribute    
       enum:    
         - Attribute    
       type: string    
@@ -251,7 +251,7 @@ Attribute:
   "dataType": "array",  
   "description": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension",  
   "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.SmartDataModels/refs/heads/master/context.jsonld"  
+    "https://smart-data-models.github.io/dataModel.SmartDataModels/context.jsonld"  
   ]  
 }  
 ```  
@@ -312,7 +312,7 @@ Attribute:
     "value": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension"  
   },  
   "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.SmartDataModels/refs/heads/master/context.jsonld"  
+    "https://smart-data-models.github.io/dataModel.SmartDataModels/context.jsonld"  
   ]  
 }  
 ```  
