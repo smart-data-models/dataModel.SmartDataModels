@@ -16,7 +16,7 @@
           "enum": [
             "Attribute"
           ],
-          "description": "Property. It must be equal to `ThreePhaseAcMeasurement`."
+          "description": "Property. It must be equal to Attribute"
         },
         "_id": {
           "type": "string",
@@ -32,11 +32,11 @@
         },
         "context": {
           "type": "string",
-          "description": "Property. Context url of the attribute"
+          "description": "Property. Context url of the Attribute"
         },
         "parentContext": {
           "type": "string",
-          "description": "Property. Id of the parent attribute of the current one if it has any"
+          "description": "Property. Id of the parent Attribute of the current one if it has any"
         },
          "subpropertiesContext": {
           "type": "array",
