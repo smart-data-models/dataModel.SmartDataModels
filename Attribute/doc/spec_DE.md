@@ -15,7 +15,7 @@
 ## Liste der Eigenschaften  
 
 <sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
-- `_id[string]`: Identifikator des Elements, der standardmäßig von mongodb angegeben wird  - `context[string]`: Kontext-URL des Attributs  - `dataModel[string]`: Das Datenmodell, zu dem dieses Attribut gehört  - `dataType[string]`: Json-Schema Grunddatentyp, boolesch, ganzzahlig, Zahl, String, Objekt oder Array  - `description[string]`: Textliche Beschreibung des Attributs  - `format[string]`: Entweder Datum, oder Uhrzeit, oder Datum-Zeit, oder URI, usw. das Format des Attributs gemäß den Definitionen im json-Schema  - `id[string]`: Entworfener Bezeichner des Attributs im Format seines Kontexts plus der Versionsnummer, z. B. https://smartdatamodels.org/dataModel.EnergyCIM/WindGenType4IEC/address/addressLocality#0.0.1  - `license[string]`: Link zur Lizenz für das Datenmodell  - `model[string]`: Fakultativer Deskriptor, der auf die semantische Quelle des Attributs verweist  - `modelTags[string]`: Tags des Datenmodells  - `parentContext[string]`: Id des übergeordneten Attributs des aktuellen Attributs, falls dieses ein solches hat  - `parentId[string]`: Kennung des übergeordneten Attributs des aktuellen Attributs, falls es ein solches hat  - `property[string]`: Name des Attributs  - `repoName[string]`: Das Subjekt, zu dem dieses Attribut gehört  - `schemaVersion[string]`: Version des Datenmodells  - `subpropertiesContext[array]`: Id der Unterattribute des aktuellen Attributs, wenn es welche hat  - `type[string]`: Sie muss gleich `ThreePhaseAcMeasurement` sein.  - `typeNGSI[string]`: Ob es sich um eine Eigenschaft, eine GeoEigenschaft oder eine Beziehung gemäß dem NGSI-Standard handelt. Andere Typen können auch sein  - `units[string]`: Optionaler Deskriptor mit den Einheiten. Vorzugsweise im UNECE-Format  <!-- /30-PropertiesList -->  
+- `_id[string]`: Identifikator des Elements, der standardmäßig von mongodb angegeben wird  - `context[string]`: Kontext-URL des Attributs  - `dataModel[string]`: Das Datenmodell, zu dem dieses Attribut gehört  - `dataType[string]`: Json-Schema Grunddatentyp, boolesch, ganzzahlig, Zahl, String, Objekt oder Array  - `description[string]`: Textliche Beschreibung des Attributs  - `format[string]`: Entweder Datum, oder Uhrzeit, oder Datum-Zeit, oder URI, usw. das Format des Attributs gemäß den Definitionen im json-Schema  - `id[string]`: Entworfener Bezeichner des Attributs im Format seines Kontexts plus der Versionsnummer, z. B. https://smartdatamodels.org/dataModel.EnergyCIM/WindGenType4IEC/address/addressLocality#0.0.1  - `license[string]`: Link zur Lizenz für das Datenmodell  - `model[string]`: Fakultativer Deskriptor, der auf die semantische Quelle des Attributs verweist  - `modelTags[string]`: Tags des Datenmodells  - `parentContext[string]`: Id des übergeordneten Attributs des aktuellen Attributs, falls es ein solches hat  - `parentId[string]`: Kennung des übergeordneten Attributs des aktuellen Attributs, falls es ein solches hat  - `property[string]`: Name des Attributs  - `repoName[string]`: Das Subjekt, zu dem dieses Attribut gehört  - `schemaVersion[string]`: Version des Datenmodells  - `subpropertiesContext[array]`: Id der Unterattribute des aktuellen Attributs, wenn es welche hat  - `type[string]`: Es muss gleich sein wie Attribut  - `typeNGSI[string]`: Ob es sich um eine Eigenschaft, eine GeoEigenschaft oder eine Beziehung nach dem NGSI-Standard handelt. Andere Typen können auch sein  - `units[string]`: Optionaler Deskriptor mit den Einheiten. Vorzugsweise im UNECE-Format  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -38,7 +38,7 @@ Attribute:
       x-ngsi:    
         type: Property    
     context:    
-      description: Context url of the attribute    
+      description: Context url of the Attribute    
       type: string    
       x-ngsi:    
         type: Property    
@@ -83,7 +83,7 @@ Attribute:
       x-ngsi:    
         type: Property    
     parentContext:    
-      description: Id of the parent attribute of the current one if it has any    
+      description: Id of the parent Attribute of the current one if it has any    
       type: string    
       x-ngsi:    
         type: Property    
@@ -118,7 +118,7 @@ Attribute:
       x-ngsi:    
         type: Property    
     type:    
-      description: It must be equal to `ThreePhaseAcMeasurement`.    
+      description: It must be equal to Attribute    
       enum:    
         - Attribute    
       type: string    
@@ -232,7 +232,7 @@ Attribute:
 ```  
 </details>  
 #### Attribut NGSI-LD-Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für ein Attribut im JSON-LD-Format als Schlüsselwerte. Dies ist kompatibel mit NGSI-LD, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für ein Attribut im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -251,7 +251,7 @@ Attribute:
   "dataType": "array",  
   "description": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension",  
   "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.SmartDataModels/refs/heads/master/context.jsonld"  
+    "https://smart-data-models.github.io/dataModel.SmartDataModels/context.jsonld"  
   ]  
 }  
 ```  
@@ -312,7 +312,7 @@ Attribute:
     "value": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension"  
   },  
   "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.SmartDataModels/refs/heads/master/context.jsonld"  
+    "https://smart-data-models.github.io/dataModel.SmartDataModels/context.jsonld"  
   ]  
 }  
 ```  
