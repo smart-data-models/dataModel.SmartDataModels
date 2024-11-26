@@ -7,7 +7,7 @@ Attribute:
       x-ngsi:
         type: Property
     context:
-      description: Context url of the attribute
+      description: Context url of the Attribute
       type: string
       x-ngsi:
         type: Property
@@ -52,7 +52,7 @@ Attribute:
       x-ngsi:
         type: Property
     parentContext:
-      description: Id of the parent attribute of the current one if it has any
+      description: Id of the parent Attribute of the current one if it has any
       type: string
       x-ngsi:
         type: Property
@@ -87,7 +87,7 @@ Attribute:
       x-ngsi:
         type: Property
     type:
-      description: It must be equal to `ThreePhaseAcMeasurement`.
+      description: It must be equal to Attribute
       enum:
         - Attribute
       type: string
